@@ -1,0 +1,36 @@
+<script defer src="/js/usersList.js"></script>
+<div class="usersList-container">
+
+    <form id="newUserForm" class="newUserForm-container newUserForm">
+
+        <input type="text" placeholder="Имя" name="name" required class="largeInput">
+
+        <input type="number" placeholder="Возраст" name="age" required class="largeInput">
+
+        <input type="submit" value="Добавить нового пользователя" class="largeInput newUser-submit">
+
+    </form>
+
+    <table id="usersListTable" class="usersList-table">
+        <tr class="usersListRow-container">
+            <th class="usersListRow-id">ID</th>
+            <th class="usersListRow-name">Имя</th>
+            <th class="usersListRow-age">Возраст</th>
+            <th class="usersListRow-actions">Действия</th>
+        </tr>
+        {{# users }}
+            <tr class="usersListRow-container">
+                <td class="usersListRow-id">{{ id }}</td>
+                <td class="usersListRow-name">{{ name }}</td>
+                <td class="usersListRow-age">{{ age }}</td>
+                <td class="usersListRow-actions">
+                    <a href="/users/{{ id }}">Редактировать</a>
+                    <button id="deleteBtn{{ id }}" onclick="deleteButtonClicked(this, {{ id }});" class="deleteButton">
+                        Удалить
+                    </button>
+                </td>
+            </tr>
+        {{/ users }}
+    </table>
+
+</div>

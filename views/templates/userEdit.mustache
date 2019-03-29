@@ -1,0 +1,29 @@
+<script defer src="/js/userEdit.js"></script>
+<div class="editUser-container">
+
+    <form id="editUserForm" class="editUserForm-container">
+
+        <label for="nameInput" class="editUserName-label largeInput-label editUser-label">
+            Имя
+        </label>
+        <input id="nameInput" name="name" type="text" placeholder="Имя" value="{{ user.name }}" required class="editUserName-input largeInput">
+
+        <label for="ageInput" class="editUserAge-label largeInput-label editUser-label">
+            Возраст
+        </label>
+        <input id="ageInput" name="age" type="number" placeholder="Возраст" value="{{ user.age }}" required class="editUserAge-input largeInput">
+
+        <label for="idInput" class="editUserId-label largeInput-label editUser-label">
+            ID
+        </label>
+        <input id="idInput" name="id" type="text" readonly="readonly" value="{{ user.id }}" required class="editUserId-input largeInput readOnly-input">
+
+        <div class="editUser-submit">
+            <input type="submit" value="Сохранить" class="largeInput">
+        </div>
+
+        <a class="usersList-link" href="/users">К списку пользователей</a>
+
+    </form>
+
+</div>

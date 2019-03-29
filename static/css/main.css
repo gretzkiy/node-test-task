@@ -1,0 +1,32 @@
+@import "userEdit.css";
+@import "usersList.css";
+
+.largeInput {
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 150%;
+}
+
+.largeInput[type=submit] {
+    cursor: pointer;
+}
+
+.largeInput-label {
+    font-size: 150%;
+}
+
+.readOnly-input {
+    background-color: #dcdcdc;
+}
+
+body {
+    font-family: system-ui, monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
