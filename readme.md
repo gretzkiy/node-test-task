@@ -1,6 +1,6 @@
 # Тестовое задание "web-сервер на Node.js"
 
-![GUI Screenshot](./files/gui-example.png)
+![GUI Screenshot](./files/gui-demo.gif)
 
 ## Задание
 
@@ -40,6 +40,8 @@ const users = [
 npm install
 npm start
 ```
+
+Перейти на url `localhost:3000/users`
 
 ### Использованные технологии
 
